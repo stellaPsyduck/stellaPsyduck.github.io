@@ -1,0 +1,21 @@
+Colours:
+Dark Gray: #272727
+Black Green: #373d3b
+Lighter Evergreen: #457d58
+Washed Green: #7d9b76
+Mint Green: #cbddd1
+Green White: #f6f6e9
+Champagne: #fdf3dd
+
+Fonts:
+Fira Sans
+Marcellus
+
+Home Page - Welcome, My name, degree
+          - about me on a scroll down?
+
+Resume Page - it is laid out but also download
+            - Hovering over brings up more info (click to make it stay)
+
+Projects - Technical and Creative, add in wips/plans section
+Interests - Just fun facts about things I like, 

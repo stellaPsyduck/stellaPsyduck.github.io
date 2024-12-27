@@ -1,0 +1,28 @@
+body {
+    background-color: #f6f6e9;
+}
+.design-circle {
+    height: 400px; 
+    width: 400px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+  }
+.title {
+    position: relative;
+    color: #373d3b;
+    font-size: 80px;
+    letter-spacing: 10px;
+    font-family: 'fira', sans-serif;
+    padding: 10px; /*top right bottom left*/
+    text-align: center;
+}
+.subtitle {
+    position: relative;
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: #373d3b;
+    padding: 0px;
+    font-family: 'Marcellus';
+    text-align: center;
+}
