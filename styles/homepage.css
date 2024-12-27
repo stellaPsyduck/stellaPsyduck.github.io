@@ -1,28 +1,52 @@
 body {
     background-color: #f6f6e9;
 }
-.design-circle {
+
+/*------------ Code for formatting of opening homepage ---------------------*/
+#design-circle {
+    position: relative;
+    left: 20%; /* just trrying to avoid pixels for my starting object */
     height: 400px; 
     width: 400px;
-    background-color: #bbb;
+    background-color: #cbddd1;
     border-radius: 50%;
     display: flex;
+    align-items: flex-start;
+    flex-direction: column; /* Stacks the divs vertically */
   }
-.title {
+.name {
+  position: relative;
+  opacity: 0; /* Optional: to make it fade in */
+  transform: translateX(-10%);
+  transition: all 1.2s ease-out; /* Slide-in duration and easing */
+}
+.name.visible {
     position: relative;
     color: #373d3b;
+    transform: translateX(0);
+    opacity: 100;
     font-size: 80px;
     letter-spacing: 10px;
     font-family: 'fira', sans-serif;
-    padding: 10px; /*top right bottom left*/
-    text-align: center;
+    padding: 130px 20px 0px 45px; /*top right bottom left*/
+    width: 1000px;
 }
 .subtitle {
     position: relative;
+    opacity: 0; /* Optional: to make it fade in */
+    transform: translateX(-10%);
+    transition: all 1.2s ease-out; /* Slide-in duration and easing */
+}
+.subtitle.visible {
+    position: relative;
+    transform: translateX(0);
     font-size: 50px;
+    opacity: 100;
     letter-spacing: 10px;
     color: #373d3b;
-    padding: 0px;
+    padding: 0px 0px 0px 125px; /*top right bottom left*/
+    width: 1000px;
     font-family: 'Marcellus';
-    text-align: center;
 }
+
+/*------------------- About Me -----------------------------*/
