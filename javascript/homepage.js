@@ -13,4 +13,12 @@ window.addEventListener('load', function() {
     subtitle.classList.add('visible');
     
   });
+
+  // Scroll to the top after a delay to allow the animations to finish
+  setTimeout(function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  // Smooth scroll effect
+    });
+    }, 1400);  // Match the duration of the animation (in milliseconds)
 });
