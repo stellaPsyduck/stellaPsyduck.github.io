@@ -6,6 +6,7 @@ Washed Green: #7d9b76
 Mint Green: #cbddd1
 Green White: #f6f6e9
 Champagne: #fdf3dd
+purple stuff: #451254
 
 Fonts:
 Fira Sans

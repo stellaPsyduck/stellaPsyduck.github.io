@@ -1,14 +1,13 @@
 body {
-    background-color: #f6f6e9;
+    background-color: #cbddd1;
 }
-
-/*------------ Code for formatting of opening homepage ---------------------*/
 #design-circle {
     position: relative;
-    left: 20%; /* just trrying to avoid pixels for my starting object */
-    height: 400px; 
-    width: 400px;
-    background-color: #cbddd1;
+    margin: 5% 0% 0% 0%; /*top right bottom left*/
+    left: 20%;
+    height: 70vh; 
+    width: 70vh;
+    background-color: #fdf3dd;
     border-radius: 50%;
     display: flex;
     align-items: flex-start;
@@ -18,35 +17,110 @@ body {
   position: relative;
   opacity: 0; /* Optional: to make it fade in */
   transform: translateX(-10%);
-  transition: all 1.2s ease-out; /* Slide-in duration and easing */
+  transition: all 1.3s ease-out; /* Slide-in duration and easing */
 }
 .name.visible {
     position: relative;
-    color: #373d3b;
+    color: #451254;
     transform: translateX(0);
     opacity: 100;
-    font-size: 80px;
+    font-size: 6vw;
     letter-spacing: 10px;
     font-family: 'fira', sans-serif;
-    padding: 130px 20px 0px 45px; /*top right bottom left*/
-    width: 1000px;
+    padding: 35% 5% 0% 5%; /*top right bottom left*/
+    padding-left: calc(50% - 205px);
+    width: 180%;
 }
 .subtitle {
     position: relative;
     opacity: 0; /* Optional: to make it fade in */
     transform: translateX(-10%);
-    transition: all 1.2s ease-out; /* Slide-in duration and easing */
+    transition: all 1.3s ease-out; /* Slide-in duration and easing */
 }
 .subtitle.visible {
     position: relative;
     transform: translateX(0);
-    font-size: 50px;
+    font-size: 3vw;
     opacity: 100;
     letter-spacing: 10px;
-    color: #373d3b;
+    color: #451254;
     padding: 0px 0px 0px 125px; /*top right bottom left*/
-    width: 1000px;
     font-family: 'Marcellus';
+    width: 150%;
+    left: 10%;
 }
 
 /*------------------- About Me -----------------------------*/
+#about-me {
+    display: flex; /* Use flexbox for horizontal layout */
+    width: 100%;
+    padding-top: 5%;
+}
+#about-me-circle{
+    display: flex;
+    margin: 5% 0% 10% 5%; /*top right bottom left*/
+    height: 70vh; 
+    width: 70vh;
+    background-color: #f6f6e9;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    z-index: -1;
+}
+.headshot {
+    height: 100%; /* Maintain the aspect ratio */
+    width: auto;
+    border: 5px solid #f6f6e9;
+    border-radius: 10px; /* Optional: round the corners of the border */
+    margin-left: 50%;
+    margin-top: 40%;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    z-index: 1; /* ensures always in front of image */
+}
+h1 {
+    width: 100%;
+    font-weight: normal;
+    height: 5%;
+    font-family: 'fira', sans-serif;
+    font-size: 5vw;
+    letter-spacing: 10px;
+    color: #451254;
+    padding-left: 15vw;
+}
+p1 {
+    font-size: 2.5vw;
+    width: 100%;
+    font-family: 'Marcellus';
+    display: flex;
+    letter-spacing: 3px;
+    line-height: 40px;
+    color: #451254;
+    justify-content: flex-end; /* Aligns the text to the right */
+    text-align: right;
+    padding-left: 18vw;
+    padding-top: 8vw;
+}
+
+/*--------------ANIMATION STUFF---------------------*/
+.name:hover {
+    transform: scale(1.1);
+    transition: all .5s ease-out;
+}
+.subtitle:hover {
+    transform: scale(1.1);
+    transition: all .5s ease-out;
+}
+h1:hover {
+    transform: scale(1.1);
+    transition: all .5s ease-out;
+}
+p1:hover {
+    transform: scale(1.1);
+    transition: all .5s ease-out;
+}
