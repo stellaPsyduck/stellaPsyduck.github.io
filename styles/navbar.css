@@ -18,16 +18,19 @@ html, body { /* Allows for when it is implemented in other files, it doesn't ahv
 .navbar-links {
     list-style: none;
     display: flex;
-    text-align: center;
+    text-align: left;
     gap: 40%; /* Smaller gap between links */
+    width: auto;
     margin-right: 0; /* Remove excessive margin */
     padding: 0;
+    font-weight: bold;
+    white-space: nowrap;
+    word-spacing: 3px;
 }
 .navbar-links li a {
     text-decoration: none;
     color: #272727;
     font-family: 'fira', sans-serif;
     font-size: 3vh; /* Standard font size for links */
-    font-weight: bold;
     transition: color 0.3s;
 }
