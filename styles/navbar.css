@@ -1,6 +1,8 @@
 html, body { /* Allows for when it is implemented in other files, it doesn't ahve gapping*/
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+
 }
 .navbar {
     display: flex;
