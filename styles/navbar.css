@@ -4,21 +4,24 @@ html, body { /* Allows for when it is implemented in other files, it doesn't ahv
 }
 .navbar {
     display: flex;
+    position: fixed;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #457d58;
     height: 80px; /* Standard height for navbar */
-    position: sticky;
     padding: 0;
     margin: 0;
     top: 0;
+    left: 0;
     z-index: 1000;
+    width: 100%;
 }
 .navbar-links {
     list-style: none;
+    justify-content: center;
     display: flex;
-    text-align: left;
+    text-align: center;
     gap: 40%; /* Smaller gap between links */
     width: auto;
     margin-right: 0; /* Remove excessive margin */

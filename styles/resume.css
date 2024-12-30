@@ -1,3 +1,101 @@
 body {
     background-color: #fdf3dd;
+    display: flex;
+    flex-direction: row;
+}
+#resume-button {
+    /*------ Setting up the button shape ------*/
+    position: fixed;
+    margin: 13% 0% 10% 0%; /*top right bottom left*/
+    left: 5%;
+    height: 70vh; 
+    width: 15vh;
+    background-color: #457d58;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; /* Stacks the divs vertically */
+
+    /*------- Formatting the Text ---------*/
+    text-align: center;
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;      /* Centers content vertically */
+    color: #f6f6e9;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    font-size: 4vw;
+    letter-spacing: 10px;
+    font-family: 'fira', sans-serif;
+}
+#information {
+    margin-top: 5%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column; /* Arrange information vertically */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: center; /* Center content vertically */
+    width: 70%; /* Adjust the width of the information section */
+}
+#skills {
+    /*----------Placement on Page------------*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 80%; 
+    height: 30%;
+
+    /*----------Actual text formatting stuff----*/
+    font-weight: lighter;
+    font-family: 'fira', sans-serif;
+    letter-spacing: 20px;
+    font-size: 3vh;
+    color: #272727;
+}
+h1 {
+    display: flex; /* Use flexbox for horizontal layout */
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+    justify-content: center;
+}
+#skill-buttons {
+    justify-content: center; /* Distribute buttons evenly across the container */
+    width: 100%; /* Ensure buttons take up the full width of the parent container */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
+}
+.skill-button {
+    position: relative;
+    background-color: #cbddd1;
+    border-radius: 25px;
+    flex: 1; /* This makes all buttons take up equal space */
+    height: auto;
+    padding: 2.5% 5%;
+    font-size: 4vh;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    font-family: 'Marcellus';
+    text-align: center;
+    margin: 3%; /* Optional: space around each button */
+}
+
+.tooltip {
+    position: absolute;
+    top: 20%; /* Position the tooltip above the button */
+    width: 60%;
+    left: 125%;
+    transform: translateX(-50%);
+    background-color: #373d3bb9;
+    color: #fdf3dd;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    font-size: 1.5rem;
+    white-space: normal;
+    z-index: 10;
+    transition: opacity 0.5s ease; /* Fade-in effect */
+}
+.skill-button:hover .tooltip {
+    display: block;
 }
