@@ -44,15 +44,14 @@ body {
     justify-content: center; 
     width: 80%; 
     height: 30%;
-
-    /*----------Actual text formatting stuff----*/
-    font-weight: lighter;
-    font-family: 'fira', sans-serif;
-    letter-spacing: 20px;
-    font-size: 3vh;
-    color: #272727;
+    margin: 2.5%;
 }
 h1 {
+    font-weight: normal;
+    font-family: 'fira', sans-serif;
+    letter-spacing: 20px;
+    font-size: 7vh;
+    color: #272727;
     display: flex; /* Use flexbox for horizontal layout */
     width: 100%;
     padding-top: 5%;
@@ -82,13 +81,14 @@ h1 {
 
 .tooltip {
     position: absolute;
+    text-align: center;
     top: 20%; /* Position the tooltip above the button */
-    width: 60%;
+    width: 80%;
     left: 125%;
     transform: translateX(-50%);
     background-color: #373d3bb9;
     color: #fdf3dd;
-    padding: 10px;
+    padding: 5%;
     border-radius: 5px;
     display: none;
     font-size: 1.5rem;
@@ -98,4 +98,14 @@ h1 {
 }
 .skill-button:hover .tooltip {
     display: block;
+}
+#experience { /* I like having these ID tags in case I want to have drop down menus to go to specifc sections of page*/
+    /*----------Placement on Page------------*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 80%; 
+    height: 30%;
+    margin: 2.5%;
 }
