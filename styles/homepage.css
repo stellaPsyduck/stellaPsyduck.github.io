@@ -98,7 +98,7 @@ p1 {
     width: 100%;
     font-family: 'Marcellus';
     display: flex;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     line-height: 40px;
     color: #451254;
     justify-content: flex-end; /* Aligns the text to the right */

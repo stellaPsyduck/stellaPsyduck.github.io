@@ -27,14 +27,24 @@ body {
     letter-spacing: 10px;
     font-family: 'fira', sans-serif;
 }
+#resume-button:hover .tooltip{
+    writing-mode: horizontal-tb;
+    display: block;
+    width: 15vw;
+    font-size: 2vh;
+    letter-spacing: 1px;
+    left: 150%;
+    top: 0;
+    z-index: 1000;
+}
 #information {
-    margin-top: 5%;
-    margin-left: 25%;
+    margin-top: 8%;
+    padding: 0;
+    margin-left: 20%;
     display: flex;
     flex-direction: column; /* Arrange information vertically */
     align-items: flex-start; /* Align items to the left */
-    justify-content: center; /* Center content vertically */
-    width: 70%; /* Adjust the width of the information section */
+    width: 100%; /* Adjust the width of the information section */
 }
 #skills {
     /*----------Placement on Page------------*/
@@ -42,9 +52,9 @@ body {
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    width: 80%; 
-    height: 30%;
-    margin: 2.5%;
+    width: 90%; 
+    height: auto;
+    margin-bottom: 2.5%;
 }
 h1 {
     font-weight: normal;
@@ -54,7 +64,6 @@ h1 {
     color: #272727;
     display: flex; /* Use flexbox for horizontal layout */
     width: 100%;
-    padding-top: 5%;
     text-align: center;
     justify-content: center;
 }
@@ -83,8 +92,8 @@ h1 {
     position: absolute;
     text-align: center;
     top: 20%; /* Position the tooltip above the button */
-    width: 80%;
-    left: 125%;
+    width: 50%;
+    left: 90%;
     transform: translateX(-50%);
     background-color: #373d3bb9;
     color: #fdf3dd;
@@ -99,6 +108,8 @@ h1 {
 .skill-button:hover .tooltip {
     display: block;
 }
+
+/*--------------------EXPERIENCE STUFF--------------------------*/
 #experience { /* I like having these ID tags in case I want to have drop down menus to go to specifc sections of page*/
     /*----------Placement on Page------------*/
     display: flex;
@@ -107,5 +118,106 @@ h1 {
     justify-content: center; 
     width: 80%; 
     height: 30%;
+    margin: 5%;
+    padding-top: 15%;
+}
+.experience-box-left {
+    height: 15vh;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
     margin: 2.5%;
+    margin-right: 50%;
+}
+.experience-box-left:hover .tooltip {
+    display: block;
+    width: 80%;
+    background-color: #373d3b;
+}
+.experience-box-left img {
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+    background-color: #ffffff;
+    margin: 3%;
+    border: 3px solid #373d3b;  /* 5px thick, green border */
+}
+.experience-box-right { /* This is a stupid way to do this -- i just can't think of a better one atm */
+    height: 15vh;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    margin: 2.5%;
+    margin-left: 40%;
+}
+.experience-box-right:hover .tooltip {
+    display: block;
+    width: 100%;
+    background-color: #373d3b;
+    left: 10%;
+}
+.experience-box-right img {
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+    background-color: #ffffff;
+    margin: 3%;
+    border: 3px solid #373d3b;  /* 5px thick, green border */
+}
+.experience-title {
+    margin-top: 6%;
+    white-space: nowrap;
+    font-family: 'Marcellus';
+    font-size: 5vh;
+    font-weight: normal;
+    position: relative; /* allows for things inside to choose position off outer container ref*/
+    margin-right: 10%;
+}
+.experience-subtitle {
+    position: absolute;
+    font-size: 3vh;
+}
+
+/*-------------EDUCATION STUFF----------------*/
+#education{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 80%; 
+    height: 30%;
+    margin: 5%;
+}
+.education-box {
+    height: 15vh;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    margin: 2.5%;
+    margin-right: 50%;
+}
+.education-box img {
+    position: absolute;
+    border-radius: 50%;
+    width: 8vw;
+    height: auto;
+    background-color: #ffffff;
+    margin-left: 5%;
+    margin-top: -3%;
+    border: 3px solid #373d3b;  /* 5px thick, green border */
+}
+.education-title {
+    margin-top: 6%;
+    white-space: nowrap;
+    font-family: 'Marcellus';
+    justify-content: center;
+    font-size: 5vh;
+    font-weight: normal;
+    position: relative; /* allows for things inside to choose position off outer container ref*/
+    margin-right: 10%;
+}
+.education-subtitle {
+    position: absolute;
+    font-size: 3vh;
+    padding: 0;
 }
