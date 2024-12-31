@@ -1,0 +1,76 @@
+body {
+    background-color: #ede8ea;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#projects-title{
+    /*------ Setting up the button shape ------*/
+    position: fixed;
+    margin: 13% 0% 10% 0%; /*top right bottom left*/
+    padding-top: 2%;
+    padding-bottom: 2%;
+    left: 5%;
+    height: auto; 
+    width: 15vh;
+    background-color: #7d9b76;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; /* Stacks the divs vertically */
+
+    /*------- Formatting the Text ---------*/
+    text-align: center;
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;      /* Centers content vertically */
+    color: #ede8ea;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    font-size: 3vw;
+    letter-spacing: 10px;
+    font-family: 'fira', sans-serif;
+}
+#project-buttons {
+    margin-top: 10%;
+    margin-left: 15%;
+    justify-content: center; /* Distribute buttons evenly across the container */
+    width: 80%; /* Ensure buttons take up the full width of the parent container */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+    grid-template-rows: repeat(3, 1fr);    /* 3 equal rows */
+    gap: 5%; /* Space between items */
+}
+.project-button-creative {
+    height: 32vh;
+    width: 13vw;
+    border-radius: 25px;
+    background-color: #457d58;
+
+    /*Text Formatting*/
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes content to top and bottom */
+    padding-bottom: 3vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 4vh;
+}
+.project-button-technical {
+    height: 32vh;
+    width: 13vw;
+    border-radius: 25px;
+    background-color: #272727;
+
+    /*Text Formatting*/
+    color: #ede8ea;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes content to top and bottom */
+    padding-bottom: 3vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 4vh;
+}
