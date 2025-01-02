@@ -27,16 +27,6 @@ body {
     letter-spacing: 10px;
     font-family: 'fira', sans-serif;
 }
-#resume-button:hover .tooltip{
-    writing-mode: horizontal-tb;
-    display: block;
-    width: 15vw;
-    font-size: 2vh;
-    letter-spacing: 1px;
-    left: 150%;
-    top: 0;
-    z-index: 1000;
-}
 #information {
     margin-top: 8%;
     padding: 0;
@@ -187,6 +177,7 @@ h1 {
     width: 80%; 
     height: 30%;
     margin: 5%;
+    margin-bottom: 2%;
 }
 .education-box {
     height: 15vh;
@@ -220,4 +211,23 @@ h1 {
     position: absolute;
     font-size: 3vh;
     padding: 0;
+}
+#pdf-view {
+    margin-left: 30%;
+    background-color: #457d58;
+    border-radius: 25px;
+    height: auto;
+    width: auto;
+    padding: 1.5%;
+
+    /*Text Layout*/
+    font-size: 3vh;
+    letter-spacing: 10px;
+    color: #f6f6e9;
+    font-family: 'fira', sans-serif;
+    text-decoration: none;
+}
+#pdf-view:hover {
+    text-decoration: underline;
+    background-color: #7d9b76;
 }
