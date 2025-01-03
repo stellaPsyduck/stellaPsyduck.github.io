@@ -2,7 +2,7 @@ document.body.style.height = "0vh"; // Set a fixed height of the viewport
 
 //on window load
 window.addEventListener('load', function() {
-  $("#navbar-container").load("../html/navbar.html", function() {
+  $("#navbar-container").load("html/navbar.html", function() {
 
     // Once the navbar is loaded, trigger animations
     var name = document.querySelector('.name');
