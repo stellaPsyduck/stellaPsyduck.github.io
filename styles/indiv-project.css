@@ -46,3 +46,7 @@ p {
     width: 60%;
     height: auto;
 }
+.side-by-side-img {
+    display: flex;
+    gap: 5%;
+}

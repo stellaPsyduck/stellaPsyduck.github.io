@@ -2,17 +2,21 @@ window.addEventListener('load', function() {
     $("#navbar-container").load("html/navbar.html");
 });
 
-// Create a video element
-const video = document.createElement('video');
-video.controls = true;  // Add controls to the video player
+function addYouTubeVideo() {
+    // Create the iframe element
+    var iframe = document.createElement('iframe');
 
-// Create a source element for the video
-const source = document.createElement('source');
-source.src = 'images/no-money/No Money V3.AVI';  // Path to your video file
-source.type = 'video/AVI';  // Specify the video type
+    // Set the YouTube video URL and attributes
+    iframe.src = "https://youtu.be/O9DYApaLEDg";  // Replace with your YouTube video URL
+    iframe.width = "560";  // Set width
+    iframe.height = "315"; // Set height
+    iframe.frameBorder = "0";  // Remove the frame border
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";  // Allow features
+    iframe.allowFullscreen = true;  // Allow fullscreen
 
-// Append the source to the video element
-video.appendChild(source);
+    // Append the iframe to the 'video-container' div
+    document.getElementById("video-container").appendChild(iframe);
+}
 
-// Append the video to the video container in the HTML
-document.getElementById('video-container').appendChild(video);
+// Add the YouTube video when the page loads
+window.onload = addYouTubeVideo;

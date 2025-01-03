@@ -76,5 +76,10 @@ body {
     padding-bottom: 3vh;
     padding-left: 1vw;
     padding-right: 1vw;
+    text-decoration: none;
     font-size: 4vh;
+}
+.project-button-technical:hover {
+    background-color: #1a1919;
+
 }
