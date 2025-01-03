@@ -1,0 +1,52 @@
+body {
+    background-color: #f3c3b9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* Horizontally center the content */
+}
+h1 { /* This is to be the opening title for all projects */
+    margin-top: 10%;
+    font-weight: normal;
+    font-family: 'fira', sans-serif;
+    letter-spacing: 10px;
+    font-size: 7vh;
+    color: #272727;
+}
+h2 { /*this is specifically for the dates*/
+    margin-top: 0.05%;
+    font-family: 'fira', sans-serif;
+    letter-spacing: 3px;
+    font-size: 4vh;
+    color: #373d3b;
+    font-weight: normal;
+}
+h3 { /*This is for the sub-heading of explination I want to give*/
+    width: 90%;
+    text-align: left;
+    padding-left: 10%;
+    font-weight: normal;
+    font-family: 'fira', sans-serif;
+    letter-spacing: 5px;
+    font-size: 5vh;
+    color: #272727;
+    margin: 1%;
+    font-weight: bolder;
+}
+p {
+    margin-top: 0%;
+    width: 75%;
+    text-align: left;
+    padding-right: 5%;
+    font-size: 3vh;
+    color: #272727;
+    font-family: 'Marcellus';
+}
+
+.story-board {
+    width: 60%;
+    height: auto;
+}
+.side-by-side-img {
+    display: flex;
+    gap: 5%;
+}

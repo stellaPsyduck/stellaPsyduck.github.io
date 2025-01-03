@@ -1,0 +1,41 @@
+html, body { /* Allows for when it is implemented in other files, it doesn't ahve gapping*/
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #457d58;
+    height: 80px; /* Standard height for navbar */
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.navbar-links {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    gap: 40%; /* Smaller gap between links */
+    width: auto;
+    margin-right: 0; /* Remove excessive margin */
+    padding: 0;
+    font-weight: bold;
+    white-space: nowrap;
+    word-spacing: 3px;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: #272727;
+    font-family: 'fira', sans-serif;
+    font-size: 3vh; /* Standard font size for links */
+    transition: color 0.3s;
+}

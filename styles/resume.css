@@ -1,0 +1,234 @@
+body {
+    background-color: #fdf3dd;
+    display: flex;
+    flex-direction: row;
+}
+#resume-button {
+    /*------ Setting up the button shape ------*/
+    position: fixed;
+    margin: 13% 0% 10% 0%; /*top right bottom left*/
+    left: 5%;
+    height: 70vh; 
+    width: 15vh;
+    background-color: #457d58;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; /* Stacks the divs vertically */
+
+    /*------- Formatting the Text ---------*/
+    text-align: center;
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;      /* Centers content vertically */
+    color: #f6f6e9;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    font-size: 4vw;
+    letter-spacing: 10px;
+    font-family: 'fira', sans-serif;
+}
+#information {
+    margin-top: 8%;
+    padding: 0;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column; /* Arrange information vertically */
+    align-items: flex-start; /* Align items to the left */
+    width: 100%; /* Adjust the width of the information section */
+}
+#skills {
+    /*----------Placement on Page------------*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 90%; 
+    height: auto;
+    margin-bottom: 2.5%;
+}
+h1 {
+    font-weight: normal;
+    font-family: 'fira', sans-serif;
+    letter-spacing: 20px;
+    font-size: 7vh;
+    color: #272727;
+    display: flex; /* Use flexbox for horizontal layout */
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+#skill-buttons {
+    justify-content: center; /* Distribute buttons evenly across the container */
+    width: 100%; /* Ensure buttons take up the full width of the parent container */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
+}
+.skill-button {
+    position: relative;
+    background-color: #cbddd1;
+    border-radius: 25px;
+    flex: 1; /* This makes all buttons take up equal space */
+    height: auto;
+    padding: 2.5% 5%;
+    font-size: 4vh;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    font-family: 'Marcellus';
+    text-align: center;
+    margin: 3%; /* Optional: space around each button */
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    top: 20%; /* Position the tooltip above the button */
+    width: 50%;
+    left: 90%;
+    transform: translateX(-50%);
+    background-color: #373d3bb9;
+    color: #fdf3dd;
+    padding: 5%;
+    border-radius: 5px;
+    display: none;
+    font-size: 1.5rem;
+    white-space: normal;
+    z-index: 10;
+    transition: opacity 0.5s ease; /* Fade-in effect */
+}
+.skill-button:hover .tooltip {
+    display: block;
+}
+
+/*--------------------EXPERIENCE STUFF--------------------------*/
+#experience { /* I like having these ID tags in case I want to have drop down menus to go to specifc sections of page*/
+    /*----------Placement on Page------------*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 80%; 
+    height: 30%;
+    margin: 5%;
+    padding-top: 15%;
+}
+.experience-box-left {
+    height: 15vh;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    margin: 2.5%;
+    margin-right: 50%;
+}
+.experience-box-left:hover .tooltip {
+    display: block;
+    width: 80%;
+    background-color: #373d3b;
+}
+.experience-box-left img {
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+    background-color: #ffffff;
+    margin: 3%;
+    border: 3px solid #373d3b;  /* 5px thick, green border */
+}
+.experience-box-right { /* This is a stupid way to do this -- i just can't think of a better one atm */
+    height: 15vh;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    margin: 2.5%;
+    margin-left: 40%;
+}
+.experience-box-right:hover .tooltip {
+    display: block;
+    width: 100%;
+    background-color: #373d3b;
+    left: 10%;
+}
+.experience-box-right img {
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+    background-color: #ffffff;
+    margin: 3%;
+    border: 3px solid #373d3b;  /* 5px thick, green border */
+}
+.experience-title {
+    margin-top: 6%;
+    white-space: nowrap;
+    font-family: 'Marcellus';
+    font-size: 5vh;
+    font-weight: normal;
+    position: relative; /* allows for things inside to choose position off outer container ref*/
+    margin-right: 10%;
+}
+.experience-subtitle {
+    position: absolute;
+    font-size: 3vh;
+}
+
+/*-------------EDUCATION STUFF----------------*/
+#education{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 80%; 
+    height: 30%;
+    margin: 5%;
+    margin-bottom: 2%;
+}
+.education-box {
+    height: 15vh;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    margin: 2.5%;
+    margin-right: 50%;
+}
+.education-box img {
+    position: absolute;
+    border-radius: 50%;
+    width: 8vw;
+    height: auto;
+    background-color: #ffffff;
+    margin-left: 5%;
+    margin-top: -3%;
+    border: 3px solid #373d3b;  /* 5px thick, green border */
+}
+.education-title {
+    margin-top: 6%;
+    white-space: nowrap;
+    font-family: 'Marcellus';
+    justify-content: center;
+    font-size: 5vh;
+    font-weight: normal;
+    position: relative; /* allows for things inside to choose position off outer container ref*/
+    margin-right: 10%;
+}
+.education-subtitle {
+    position: absolute;
+    font-size: 3vh;
+    padding: 0;
+}
+#pdf-view {
+    margin-left: 30%;
+    background-color: #457d58;
+    border-radius: 25px;
+    height: auto;
+    width: auto;
+    padding: 1.5%;
+
+    /*Text Layout*/
+    font-size: 3vh;
+    letter-spacing: 10px;
+    color: #f6f6e9;
+    font-family: 'fira', sans-serif;
+    text-decoration: none;
+}
+#pdf-view:hover {
+    text-decoration: underline;
+    background-color: #7d9b76;
+
+}
