@@ -32,6 +32,18 @@ h3 { /*This is for the sub-heading of explination I want to give*/
     margin: 1%;
     font-weight: bolder;
 }
+h4 { /*This is for the sub-heading of explination I want to give*/
+    width: 80%;
+    text-align: left;
+    padding-left: 0%;
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-size: 3vh;
+    color: #584b4b;
+    margin: 1%;
+    margin-top: 0.05%;
+    font-weight: bolder;
+}
 p {
     margin-top: 0%;
     width: 75%;
@@ -42,6 +54,7 @@ p {
     font-family: 'Marcellus';
 }
 
+/* For the films */
 .story-board {
     width: 60%;
     height: auto;
@@ -49,4 +62,31 @@ p {
 .side-by-side-img {
     display: flex;
     gap: 5%;
+}
+
+/* For the essays */
+#pdf-view {
+    margin: 0%;
+    background-color: #54124baf;
+    border-radius: 25px;
+    height: auto;
+    width: auto;
+    padding: .75%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /*Text Layout*/
+    font-size: 2vh;
+    letter-spacing: 15px;
+    color: #f6f6e9;
+    font-family: 'fira', sans-serif;
+    text-decoration: none;
+}
+#pdf-view:hover {
+    text-decoration: none;
+    background-color: #54124b;
+
 }
