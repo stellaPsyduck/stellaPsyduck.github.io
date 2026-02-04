@@ -36,8 +36,8 @@ body {
     justify-content: center; /* Distribute buttons evenly across the container */
     width: 80%; /* Ensure buttons take up the full width of the parent container */
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
-    grid-template-rows: repeat(3, 1fr);    /* 3 equal rows */
+    grid-template-columns: repeat(4, 1fr); /* 6 equal columns */
+    /* grid-template-rows: repeat(3, 1fr);    3 equal rows */
     gap: 5%; /* Space between items */
 }
 .project-button-creative {

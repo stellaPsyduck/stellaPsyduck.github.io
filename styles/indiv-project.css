@@ -62,6 +62,7 @@ p {
 .side-by-side-img {
     display: flex;
     gap: 5%;
+    justify-content: center;
 }
 
 /* For the essays */
@@ -89,4 +90,10 @@ p {
     text-decoration: none;
     background-color: #54124b;
 
+}
+.gif-video {
+  max-width: 40%;
+  height: auto;
+    justify-content: center;
+    align-items: center;
 }
